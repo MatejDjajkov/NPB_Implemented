@@ -51,7 +51,7 @@ public class AvailableTicketsController {
             @RequestParam("numberOfTickets") Integer numberOfTickets,
             @RequestParam("consumerPaymentMethod") String consumerPaymentMethod)
     {
-        jdbcTemplate.execute(String.format("select BuyConcertTicket(%d,%d,%d,'%s');"
+        jdbcTemplate.execute(String.format("CALL BuyConcertTicket(%d,%d,%d,'%s');"
                 ,concertID,numberOfTickets,45680,consumerPaymentMethod));
         return "redirect:/tickets";
     }

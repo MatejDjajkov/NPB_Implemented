@@ -5,6 +5,49 @@
     <title>Title</title>
 </head>
 <body>
+<h1>Ticket Guru</h1>
+<h5>Basic Analytics</h5>
+<table>
+    <div>
+        <a th:href="@{/ticketsperconcert}">Tickets per concert</a>
+        <a th:href="@{/shoprevenue}">Physical Shop revenue</a>
+        <a th:href="@{/onlinerevenue}">Online revenue</a>
+        <a th:href="@{/historicresells}">Historic resells</a>
+
+    </div>
+    <div>
+        <form th:action="@{/activity}" method="get">
+            <label for="from">From:</label>
+            <input type="date" id="from" name="from" required>
+
+            <label for="to">To:</label>
+            <input type="date" id="to" name="to" required>
+
+            <button type="submit">Get activity</button>
+        </form>
+    </div>
+
+    <div>
+        <form th:action="@{/paymentanalytics}" method="get">
+            <label for="from">From:</label>
+            <input type="date"  name="from" required>
+
+            <label for="to">To:</label>
+            <input type="date"  name="to" required>
+
+            <button type="submit">Get paymentDetails</button>
+        </form>
+    </div>
+    <h5>Adding </h5>
+    <a th:href="@{/addconcert}">Add concert</a>
+
+    <a th:href="@{/addtickets}">Add online tickets</a>
+
+    <a th:href="@{/physicaltickets}">Add physical shop tickets</a>
+
+    <a th:href="@{/addmusicgroup}">Add new music group</a>
+
+</table>
 <h2>Inserting tickets to physical location</h2>
 <form method="post" action="/insertPhysicalTicket">
     <label for="concertIDArgument">Concert ID:</label>

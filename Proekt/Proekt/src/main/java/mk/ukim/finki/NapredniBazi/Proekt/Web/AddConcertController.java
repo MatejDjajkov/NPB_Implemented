@@ -45,7 +45,7 @@ public class AddConcertController {
         }
 
         StringBuilder sb = new StringBuilder();
-        sb.append(String.format("SELECT add_concert ('%s',%d,'%s',ARRAY[%s],%d);"
+        sb.append(String.format("CALL add_concert ('%s',%d,'%s',ARRAY[%s],%d);"
                 ,concertName.replace("'", "''"),concertLocationId
                 ,concertDate,stringNumbers.substring(0,stringNumbers.length()-1)
                 ,soloMusicianId));

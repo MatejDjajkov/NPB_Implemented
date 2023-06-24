@@ -39,7 +39,7 @@ public class AddMusicGroupController {
             stringNumbers+=number;
             stringNumbers+=",";
         }
-        jdbcTemplate.execute(String.format("select add_music_group('%s',ARRAY [%s]);",
+        jdbcTemplate.execute(String.format("CALL add_music_group('%s',ARRAY [%s]);",
                 groupName.replace("'", "''"),
                 stringNumbers.substring(0,stringNumbers.length()-1)));
 

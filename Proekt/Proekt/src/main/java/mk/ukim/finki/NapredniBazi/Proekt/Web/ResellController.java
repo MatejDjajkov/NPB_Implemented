@@ -39,7 +39,7 @@ public class ResellController {
     public String ResellPayment(@RequestParam ("listingID") Integer listingID)
     {
         StringBuilder sb=new StringBuilder();
-        sb.append(String.format("select BuyResellTicket(45680,%d);",listingID));
+        sb.append(String.format("CALL BuyResellTicket(45680,%d);",listingID));
 
         jdbcTemplate.execute(sb.toString());
 
@@ -55,7 +55,7 @@ public class ResellController {
             )
     {
         StringBuilder sb=new StringBuilder();
-        sb.append(String.format("select addingTicketForResell(%s,%d,%d);",price,consumerID,ticketID));
+        sb.append(String.format("CALL addingTicketForResell(%s,%d,%d);",price,consumerID,ticketID));
 
         jdbcTemplate.execute(sb.toString());
 

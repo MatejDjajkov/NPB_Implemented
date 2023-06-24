@@ -43,7 +43,7 @@ public class AddConcertTicketsController {
             @RequestParam("numberOfTickets") Integer numberOfTickets
     )
     {
-        jdbcTemplate.execute(String.format("select insert_physical_ticket_function(%d,%d,%d,%s,%d);",
+        jdbcTemplate.execute(String.format("CALL insert_physical_ticket_function(%d,%d,%d,%s,%d);",
                 concertID,physicalLocationID,concertOrganisationCompany,ticketPrice,numberOfTickets));
 
         return "redirect:/admin";
@@ -58,7 +58,7 @@ public class AddConcertTicketsController {
             @RequestParam("numberOfTickets") int numberOfTickets) {
 
         StringBuilder sb = new StringBuilder();
-        sb.append(String.format("SELECT insert_ticket_function(%d, %d, %s, %d);",
+        sb.append(String.format("CALL insert_ticket_function(%d, %d, %s, %d);",
                 concertIDArgument, concertOrganisationCompany, ticketPrice, numberOfTickets));
         String sqlStatement = sb.toString();
 
