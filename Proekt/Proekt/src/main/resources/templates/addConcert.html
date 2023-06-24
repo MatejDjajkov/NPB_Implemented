@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/addconcert" method="POST">
+    <label for="concertName">Concert Name:</label>
+    <input type="text" id="concertName" name="concert_name" required><br>
+
+    <label for="locationId">Location ID:</label>
+    <input type="number" id="locationId" name="concert_location_id" required><br>
+
+    <label for="concertDate">Concert Date:</label>
+    <input type="date" id="concertDate" name="concert_date" required><br>
+
+    <label for="bandIds">Band IDs (space-separated):</label>
+    <input type="text" id="bandIds" name="band_ids" required><br>
+
+    <label for="soloMusicianId">Solo Musician ID (optional):</label>
+    <input type="number" id="soloMusicianId" name="solo_musician_id"><br>
+
+    <input type="submit" value="Add Concert">
+</form>
+
+
+</body>
+</html>

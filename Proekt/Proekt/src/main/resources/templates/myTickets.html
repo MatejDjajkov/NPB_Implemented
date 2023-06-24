@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MyTicket</title>
+</head>
+<body>
+<h1>Ticket Guru</h1>
+<table>
+    <div>
+        <a th:href="@{/tickets}">My tickets</a>
+        <a th:href="@{/resales}">Resell Listings</a>
+        <a th:href="@{/availableTickets}">Available tickets</a>
+        <a th:href="@{/physicalShop}">Physical Shops</a>
+        <a th:href="@{/payments}">My payments</a>
+    </div>
+</table>
+
+<h2>My Tickets</h2>
+<table>
+    <thead>
+    <tr>
+        <th>ticketID</th>
+        <th>purchaseDate</th>
+        <th>concertID</th>
+        <th>concertName</th>
+        <th>concertDate</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="ticket : ${tickets}">
+        <td colspan="2" th:text="${ticket.ticketid}"></td>
+        <td colspan="2" th:text="${ticket.datefrom}"></td>
+        <td colspan="2" th:text="${ticket.concertid}"></td>
+        <td colspan="2" th:text="${ticket.concertname}"></td>
+        <td colspan="2" th:text="${ticket.concertdate}"></td>
+        <td>
+            <form method="get" th:action="@{/details}">
+                <input type="hidden" name="id" th:value="${ticket.concertid}" />
+                <button type="submit">ConcertDetails</button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MyTicket</title>
+</head>
+<body>
+<div th:fragment="adminBasic">
+    <h1>Ticket Guru</h1>
+    <h5>Basic Analytics</h5>
+    <table>
+        <div>
+            <a th:href="@{/ticketsperconcert}">Tickets per concert</a>
+            <a th:href="@{/shoprevenue}">Physical Shop revenue</a>
+            <a th:href="@{/onlinerevenue}">Online revenue</a>
+            <a th:href="@{/historicresells}">Historic resells</a>
+
+        </div>
+
+    </table>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>No. of new users</th>
+            <th>No. of resells</th>
+            <th>No. of payments</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="activity : ${activities}">
+            <td colspan="2" th:text="${activity.date}"></td>
+            <td colspan="2" th:text="${activity.registeredUsers}"></td>
+            <td colspan="2" th:text="${activity.resales}"></td>
+            <td colspan="2" th:text="${activity.onlinePayments}"></td>
+
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MyTicket</title>
+</head>
+<body>
+
+<h1>Ticket Guru</h1>
+<h5>Basic Analytics</h5>
+<table>
+    <div>
+        <a th:href="@{/ticketsperconcert}">Tickets per concert</a>
+        <a th:href="@{/shoprevenue}">Physical Shop revenue</a>
+        <a th:href="@{/onlinerevenue}">Online revenue</a>
+        <a th:href="@{/historicresells}">Historic resells</a>
+
+    </div>
+</table>
+
+
+
+
+<table>
+    <thead>
+    <tr>
+        <th>year</th>
+        <th>month</th>
+        <th>concertid</th>
+        <th>concertname</th>
+        <th>revenue</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="online : ${onlineRevenue}">
+        <td colspan="2" th:text="${online.year}"></td>
+        <td colspan="2" th:text="${online.month}"></td>
+        <td colspan="2" th:text="${online.concertid}"></td>
+        <td colspan="2" th:text="${online.concertname}"></td>
+        <td colspan="2" th:text="${online.revenue}"></td>
+
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

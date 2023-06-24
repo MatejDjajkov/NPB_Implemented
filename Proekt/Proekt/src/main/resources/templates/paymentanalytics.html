@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table>
+    <thead>
+    <tr>
+        <th>date</th>
+        <th>user</th>
+        <th>total</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="analytic : ${analytics}">
+        <td colspan="2" th:text="${analytic.paymentdate}"></td>
+        <td colspan="2" th:text="${analytic.username}"></td>
+        <td colspan="2" th:text="${analytic.total}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

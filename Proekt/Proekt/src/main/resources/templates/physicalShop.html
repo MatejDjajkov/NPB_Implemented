@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MyTicket</title>
+</head>
+<body>
+<h1>Ticket Guru</h1>
+<table>
+    <div>
+        <a th:href="@{/tickets}">My tickets</a>
+        <a th:href="@{/resales}">Resell Listings</a>
+        <a th:href="@{/availableTickets}">Available tickets</a>
+        <a th:href="@{/physicalShop}">Physical Shops</a>
+        <a th:href="@{/payments}">My payments</a>
+    </div>
+</table>
+
+<h2>Physical Shops</h2>
+
+<form th:action="@{/physicalShop/{id}(id=${id})}" method="get">
+    <input type="number" name="id" min="1" max="25" placeholder="Enter ID">
+    <button type="submit">Submit</button>
+</form>
+
+
+<div th:if="${not #lists.isEmpty(shopDetails)}" >
+<table>
+    <thead>
+    <tr>
+        <th>Address</th>
+        <th>State</th>
+        <th>city</th>
+        <th>shopname</th>
+        <th>phoneNumber</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="details : ${shopDetails}">
+        <td th:text="${details.address}"></td>
+        <td th:text="${details.state}"></td>
+        <td th:text="${details.city}"></td>
+        <td th:text="${details.shopname}"></td>
+        <td th:text="${details.phonenumber}"></td>
+    </tr>
+    </tbody>
+</table>
+</div>
+<div th:if="${not #lists.isEmpty(shopTickets)}">
+<table>
+    <thead>
+    <tr>
+        <th>ticketID</th>
+        <th>concertID</th>
+        <th>concertName</th>
+        <th>concertDate</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="tickets : ${shopTickets}">
+        <td th:text="${tickets.ticketid}"></td>
+        <td th:text="${tickets.concertid}"></td>
+        <td th:text="${tickets.concertname}"></td>
+        <td th:text="${tickets.concertdate}"></td>
+        <td>
+            <form method="get" th:action="@{/details}">
+                <input type="hidden" name="id" th:value="${tickets.concertid}" />
+                <button type="submit">ConcertDetails</button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</div>
+
+
+
+
+</body>
+</html>

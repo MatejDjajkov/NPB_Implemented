@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MyTicket</title>
+</head>
+<body>
+<h1>Ticket Guru</h1>
+<table>
+    <div>
+        <a th:href="@{/tickets}">My tickets</a>
+        <a th:href="@{/resales}">Resell Listings</a>
+        <a th:href="@{/availableTickets}">Available tickets</a>
+        <a th:href="@{/physicalShop}">Physical Shops</a>
+        <a th:href="@{/payments}">My payments</a>
+    </div>
+</table>
+
+<h2>My Tickets</h2>
+<form method="get" action="/availableticketconcert">
+    <label for="concertID">Concert ID:</label>
+    <input type="number" id="concertID" name="concertID" required><br><br>
+    <input type="submit" value="Search Concert For available">
+</form>
+<form method="post" action="/buyavailableticket">
+    <label for="IDConcert">Concert ID:</label>
+    <input type="number" id="IDConcert" name="IDConcert" required><br><br>
+    <label for="numberOfTickets">Number of Tickets:</label>
+    <input type="number" id="numberOfTickets" name="numberOfTickets" required><br><br>
+    <label for="consumerPaymentMethod">Payment Method:</label>
+    <select id="consumerPaymentMethod" name="consumerPaymentMethod" required>
+        <option value="Debit Card">Debit Card</option>
+        <option value="Credit Card">Credit Card</option>
+        <option value="PayPal">PayPal</option>
+    </select><br><br>
+    <input type="submit" value="Buy Tickets">
+</form>
+<table>
+    <thead>
+    <tr>
+        <th>ticketID</th>
+        <th>concertID</th>
+        <th>concertname</th>
+        <th>concertdate</th>
+        <th>price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="ticket : ${availableTickets}">
+        <td colspan="2" th:text="${ticket.ticketid}"></td>
+        <td colspan="2" th:text="${ticket.concertid}"></td>
+        <td colspan="2" th:text="${ticket.concertname}"></td>
+        <td colspan="2" th:text="${ticket.concertdate}"></td>
+        <td colspan="2" th:text="${ticket.price}"></td>
+        <td>
+            <form method="get" th:action="@{/details}">
+                <input type="hidden" name="id" th:value="${ticket.concertid}" />
+                <button type="submit">ConcertDetails</button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

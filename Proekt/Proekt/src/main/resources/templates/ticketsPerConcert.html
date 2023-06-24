@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MyTicket</title>
+</head>
+<body>
+
+    <h1>Ticket Guru</h1>
+    <h5>Basic Analytics</h5>
+    <table>
+        <div>
+            <a th:href="@{/ticketsperconcert}">Tickets per concert</a>
+            <a th:href="@{/shoprevenue}">Physical Shop revenue</a>
+            <a th:href="@{/onlinerevenue}">Online revenue</a>
+            <a th:href="@{/historicresells}">Historic resells</a>
+
+        </div>
+    </table>
+
+
+
+
+    <table>
+        <thead>
+        <tr>
+            <th>concertID</th>
+            <th>concertName</th>
+            <th>concertDate</th>
+            <th>totalTickets</th>
+            <th>expiredTickets</th>
+            <th>soldTickets</th>
+            <th>availableTickets</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="ticket : ${ticketInfo}">
+            <td colspan="2" th:text="${ticket.concertid}"></td>
+            <td colspan="2" th:text="${ticket.concertname}"></td>
+            <td colspan="2" th:text="${ticket.concertdate}"></td>
+            <td colspan="2" th:text="${ticket.total_tickets}"></td>
+            <td colspan="2" th:text="${ticket.total_expired_tickets}"></td>
+            <td colspan="2" th:text="${ticket.total_sold_tickets}"></td>
+            <td colspan="2" th:text="${ticket.total_available_tickets}"></td>
+
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>

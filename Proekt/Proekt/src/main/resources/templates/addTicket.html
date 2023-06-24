@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form method="post" action="/addconcerttickets">
+  <label for="concertIDArgument">Concert ID:</label>
+  <input type="number" id="concertIDArgument" name="concertIDArgument" required><br><br>
+
+  <label for="concertOrganisationCompany">Concert Organisation Company:</label>
+  <input type="number" id="concertOrganisationCompany" name="concertOrganisationCompany" required><br><br>
+
+  <label for="ticketPrice">Ticket Price:</label>
+  <input type="number" id="ticketPrice" name="ticketPrice" step="0.1" required><br><br>
+
+  <label for="numberOfTickets">Number of Tickets:</label>
+  <input type="number" id="numberOfTickets" name="numberOfTickets" required><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

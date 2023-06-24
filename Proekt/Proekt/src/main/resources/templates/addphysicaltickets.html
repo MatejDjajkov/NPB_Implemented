@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Inserting tickets to physical location</h2>
+<form method="post" action="/insertPhysicalTicket">
+    <label for="concertIDArgument">Concert ID:</label>
+    <input type="number" id="concertIDArgument" name="concertIDArgument" required><br><br>
+    <label for="physicalLocationID">Physical Location ID:</label>
+    <input type="number" id="physicalLocationID" name="physicalLocationID" required><br><br>
+    <label for="concertOrganisationCompany">Concert Organisation Company:</label>
+    <input type="number" id="concertOrganisationCompany" name="concertOrganisationCompany" required><br><br>
+    <label for="ticketPrice">Ticket Price:</label>
+    <input type="number" step="0.1" id="ticketPrice" name="ticketPrice" required><br><br>
+    <label for="numberOfTickets">Number of Tickets:</label>
+    <input type="number" id="numberOfTickets" name="numberOfTickets" required><br><br>
+    <input type="submit" value="Insert Tickets">
+</form>
+
+</body>
+</html>

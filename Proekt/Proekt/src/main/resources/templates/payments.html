@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MyTicket</title>
+</head>
+<body>
+<h1>Ticket Guru</h1>
+<table>
+    <div>
+        <a th:href="@{/tickets}">My tickets</a>
+        <a th:href="@{/resales}">Resell Listings</a>
+        <a th:href="@{/availableTickets}">Available tickets</a>
+        <a th:href="@{/physicalShop}">Physical Shops</a>
+        <a th:href="@{/payments}">My payments</a>
+    </div>
+</table>
+
+<h2>My Payments</h2>
+<table>
+    <thead>
+    <tr>
+        <th>paymentdate</th>
+        <th>paymentamount</th>
+        <th>paymentmethod</th>
+        <th>paymentstatus</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="payment : ${payments}">
+        <td colspan="2" th:text="${payment.paymentdate}"></td>
+        <td colspan="2" th:text="${payment.paymentamount}"></td>
+        <td colspan="2" th:text="${payment.paymentmethod}"></td>
+        <td colspan="2" th:text="${payment.paymentstatus}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

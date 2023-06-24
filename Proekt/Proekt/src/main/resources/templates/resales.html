@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MyTicket</title>
+</head>
+<body>
+<h1>Ticket Guru</h1>
+<table>
+    <div>
+        <a th:href="@{/tickets}">My tickets</a>
+        <a th:href="@{/resales}">Resell Listings</a>
+        <a th:href="@{/availableTickets}">Available tickets</a>
+        <a th:href="@{/physicalShop}">Physical Shops</a>
+        <a th:href="@{/payments}">My payments</a>
+    </div>
+</table>
+
+
+<h2>Add ticket for resale</h2>
+<form method="post" action="/addresellticket">
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price" step="0.1" required><br><br>
+
+    <label for="IDconsumer">Consumer ID:</label>
+    <input type="number" id="IDconsumer" name="IDconsumer" value="45680" required><br><br>
+
+    <label for="IDticket">Ticket ID:</label>
+    <input type="number" id="IDticket" name="IDticket" required><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+<h2>Resale Listings</h2>
+<table>
+    <thead>
+    <tr>
+        <th>concertname</th>
+        <th>concertdate</th>
+        <th>Seller</th>
+        <th>Price</th>
+        <th>ValidUntil</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="listing : ${listings}">
+        <td th:text="${listing.concertname}"></td>
+        <td th:text="${listing.concertdate}"></td>
+        <td th:text="${listing.username}"></td>
+        <td th:text="${listing.resellprice}"></td>
+        <td th:text="${listing.exparationdate}"></td>
+        <td>
+            <form method="post" action="/resellPayment">
+                <input type="hidden" name="listingID" th:value="${listing.listingid}">
+                <button type="submit">Buy Ticket</button>
+            </form>
+        </td>
+        <td>
+            <form method="get" th:action="@{/details}">
+                <input type="hidden" name="id" th:value="${listing.concertid}" />
+                <button type="submit">ConcertDetails</button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
