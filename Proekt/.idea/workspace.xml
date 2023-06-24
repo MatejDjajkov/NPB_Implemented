@@ -11,6 +11,8 @@
       <change beforePath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/AddConcertTicketsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/AddConcertTicketsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/AddMusicGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/AddMusicGroupController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/AvailableTicketsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/AvailableTicketsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/MyTicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/MyTicketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/PaymentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/ResellController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/ResellController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/addConcert.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/addConcert.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/addMusicGroupNew.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/addMusicGroupNew.html" afterDir="false" />
@@ -21,6 +23,7 @@
       <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/onlineRevenue.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/onlineRevenue.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/paymentanalytics.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/paymentanalytics.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/resales.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/resales.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/shopRevenue.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/shopRevenue.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/ticketsPerConcert.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/ticketsPerConcert.html" afterDir="false" />
     </list>
@@ -72,7 +75,8 @@
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RunManager">
@@ -93,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1687185904100</updated>
       <workItem from="1687185905939" duration="92000" />
-      <workItem from="1687624298634" duration="3213000" />
+      <workItem from="1687624298634" duration="4882000" />
     </task>
     <servers />
   </component>

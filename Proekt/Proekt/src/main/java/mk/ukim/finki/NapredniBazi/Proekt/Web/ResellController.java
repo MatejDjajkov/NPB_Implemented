@@ -39,7 +39,7 @@ public class ResellController {
     public String ResellPayment(@RequestParam ("listingID") Integer listingID)
     {
         StringBuilder sb=new StringBuilder();
-        sb.append(String.format("CALL BuyResellTicket(45680,%d);",listingID));
+        sb.append(String.format("CALL BuyResellTicket(%d,%d);",ConsumerID.currentUserID,listingID));
 
         jdbcTemplate.execute(sb.toString());
 
@@ -50,12 +50,11 @@ public class ResellController {
     @PostMapping("/addresellticket")
     public String AddResellTicket(
             @RequestParam ("price") BigDecimal price,
-            @RequestParam("IDconsumer") Integer consumerID,
             @RequestParam("IDticket") Integer ticketID
             )
     {
         StringBuilder sb=new StringBuilder();
-        sb.append(String.format("CALL addingTicketForResell(%s,%d,%d);",price,consumerID,ticketID));
+        sb.append(String.format("CALL addingTicketForResell(%s,%d,%d);",price,ConsumerID.currentUserID,ticketID));
 
         jdbcTemplate.execute(sb.toString());
 

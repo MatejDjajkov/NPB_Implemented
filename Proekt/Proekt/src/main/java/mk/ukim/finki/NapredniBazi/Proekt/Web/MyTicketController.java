@@ -24,8 +24,8 @@ public class MyTicketController {
     @GetMapping("/tickets")
     public String myTickets(Model model)
     {
-        String sql="select ticketid,datefrom,concertid,concertname,concertdate from ticketsthatusersown where consumerid=45680 and validuntil >CURRENT_DATE and dateto IS NULL;";
-        List<Map<String,Object>> results=jdbcTemplate.queryForList(sql);
+        String sql="select ticketid,datefrom,concertid,concertname,concertdate from ticketsthatusersown where consumerid=? and validuntil >CURRENT_DATE and dateto IS NULL;";
+        List<Map<String,Object>> results=jdbcTemplate.queryForList(sql,ConsumerID.currentUserID);
         model.addAttribute("tickets",results);
 
         return "myTickets";

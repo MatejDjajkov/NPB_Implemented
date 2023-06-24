@@ -17,6 +17,7 @@ public class PaymentController {
     @Autowired
     public PaymentController (JdbcTemplate jdbcTemplate)
     {
+
         this.jdbcTemplate=jdbcTemplate;
     }
 
@@ -25,9 +26,9 @@ public class PaymentController {
     {
         String sql="Select paymentdate,paymentamount,paymentmethod,paymentstatus " +
                 "from paymentuserdetails " +
-                "where consumerid=45680 " +
+                "where consumerid=? " +
                 "order by paymentdate DESC ;";
-        List<Map<String,Object>> results=jdbcTemplate.queryForList(sql);
+        List<Map<String,Object>> results=jdbcTemplate.queryForList(sql,ConsumerID.currentUserID);
         model.addAttribute("payments",results);
 
         return "payments";
