@@ -5,14 +5,6 @@
     <title>Title</title>
 </head>
 <body>
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>MyTicket</title>
-</head>
-<body>
-
 <h1>Ticket Guru</h1>
 <h5>Basic Analytics</h5>
 <table>
@@ -59,33 +51,62 @@
 
 
 </table>
-<h5>Ticket status per concert</h5>
+<form action="/calendar" method="GET">
+    <label for="concert_location_id">Concert Location ID:</label>
+    <input type="number" id="concert_location_id" name="concert_location_id">
 
+    <label for="calendar_date">Calendar Date:</label>
+    <input type="date" id="calendar_date" name="calendar_date">
+
+    <input type="submit" value="Submit">
+</form>
+
+
+<div th:if="${not #lists.isEmpty(locationInfo)}" >
     <table>
         <thead>
         <tr>
-            <th>concertID</th>
-            <th>concertName</th>
-            <th>concertDate</th>
-            <th>totalTickets</th>
-            <th>expiredTickets</th>
-            <th>soldTickets</th>
-            <th>availableTickets</th>
-
+            <th>VenueName</th>
+            <th>Address</th>
+            <th>city</th>
+            <th>State</th>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="ticket : ${ticketInfo}">
-            <td colspan="2" th:text="${ticket.concertid}"></td>
-            <td colspan="2" th:text="${ticket.concertname}"></td>
-            <td colspan="2" th:text="${ticket.concertdate}"></td>
-            <td colspan="2" th:text="${ticket.total_tickets}"></td>
-            <td colspan="2" th:text="${ticket.total_expired_tickets}"></td>
-            <td colspan="2" th:text="${ticket.total_sold_tickets}"></td>
-            <td colspan="2" th:text="${ticket.total_available_tickets}"></td>
+        <tr th:each="locinfo : ${locationInfo}">
+            <td th:text="${locinfo.venuename}"></td>
+            <td th:text="${locinfo.address}"></td>
+            <td th:text="${locinfo.state}"></td>
+            <td th:text="${locinfo.city}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div th:if="${not #lists.isEmpty(calendarInfo)}">
+    <table>
+        <thead>
+        <tr>
+            <th>LocationID</th>
+            <th>calendardate</th>
+            <th>timeslot</th>
+            <th>concertid</th>
+            <th>concertname</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="calinfo : ${calendarInfo}">
+            <td th:text="${calinfo.concertlocationid}"></td>
+            <td th:text="${calinfo.calendardate}"></td>
+            <td th:text="${calinfo.timeslot}"></td>
+            <td th:text="${calinfo.concertid}"></td>
+            <td th:text="${calinfo.concertname}"></td>
 
         </tr>
         </tbody>
     </table>
+</div>
+
+
+
 </body>
 </html>

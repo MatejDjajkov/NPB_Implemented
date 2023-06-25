@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80fe48e1-3816-4fdc-88dd-b76287ed0df4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/AddConcertController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/AddConcertController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/AddConcertTicketsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/AddConcertTicketsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/AddMusicGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/AddMusicGroupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/AvailableTicketsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/AvailableTicketsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/MyTicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/MyTicketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/ResellController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/ResellController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/addConcert.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/addConcert.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/addMusicGroupNew.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/addMusicGroupNew.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/addTicket.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/addTicket.html" afterDir="false" />
@@ -22,8 +14,6 @@
       <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/historicResells.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/historicResells.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/onlineRevenue.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/onlineRevenue.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/paymentanalytics.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/paymentanalytics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/resales.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/resales.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/shopRevenue.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/shopRevenue.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/ticketsPerConcert.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/ticketsPerConcert.html" afterDir="false" />
     </list>
@@ -35,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -61,24 +51,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Anastasija/Desktop/Matej-Faks/NapredniBaziNaPodatoci/NPB_Implemented/Proekt",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Anastasija/Desktop/Matej-Faks/NapredniBaziNaPodatoci/NPB_Implemented/Proekt&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;042a742cbc9fa420da58a5eaedb4513c&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ProektApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Proekt" />
@@ -97,7 +88,9 @@
       <option name="presentableId" value="Default" />
       <updated>1687185904100</updated>
       <workItem from="1687185905939" duration="92000" />
-      <workItem from="1687624298634" duration="4882000" />
+      <workItem from="1687624298634" duration="5167000" />
+      <workItem from="1687693616124" duration="1269000" />
+      <workItem from="1687699015913" duration="2309000" />
     </task>
     <servers />
   </component>
