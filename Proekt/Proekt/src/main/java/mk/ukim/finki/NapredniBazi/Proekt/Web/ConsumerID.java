@@ -1,5 +1,5 @@
 package mk.ukim.finki.NapredniBazi.Proekt.Web;
 
 public class ConsumerID {
-    public static int currentUserID=45680;
+    public static int currentUserID=45682;
 }

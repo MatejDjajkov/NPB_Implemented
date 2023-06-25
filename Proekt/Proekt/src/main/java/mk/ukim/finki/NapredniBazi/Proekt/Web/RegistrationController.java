@@ -33,8 +33,7 @@ public class RegistrationController {
             @RequestParam("firstname") String firstName,
             @RequestParam("lastname") String lastName,
             @RequestParam("birthdate") String birthdate,
-            @RequestParam("password") String password,
-            @RequestParam("phone_number") String phoneNumber
+            @RequestParam("password") String password
     )
     {
         jdbcTemplate.execute(String.format("CALL InsertRegistration('%s','%s','%s','%s','%s','%s',NULL);",

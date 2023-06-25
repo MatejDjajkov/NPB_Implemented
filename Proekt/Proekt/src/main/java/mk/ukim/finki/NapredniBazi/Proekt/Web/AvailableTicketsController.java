@@ -52,7 +52,7 @@ public class AvailableTicketsController {
             @RequestParam("consumerPaymentMethod") String consumerPaymentMethod)
     {
         jdbcTemplate.execute(String.format("CALL BuyConcertTicket(%d,%d,%d,'%s');"
-                ,concertID,numberOfTickets,45680,consumerPaymentMethod));
+                ,concertID,numberOfTickets,ConsumerID.currentUserID,consumerPaymentMethod));
         return "redirect:/tickets";
     }
 

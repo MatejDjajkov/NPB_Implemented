@@ -6,16 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="80fe48e1-3816-4fdc-88dd-b76287ed0df4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/addConcert.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/addConcert.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/addMusicGroupNew.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/addMusicGroupNew.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/addTicket.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/addTicket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/addphysicaltickets.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/addphysicaltickets.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/adminHome.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/adminHome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/historicResells.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/historicResells.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/onlineRevenue.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/onlineRevenue.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/paymentanalytics.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/paymentanalytics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/shopRevenue.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/shopRevenue.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/templates/ticketsPerConcert.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/templates/ticketsPerConcert.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/AvailableTicketsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/AvailableTicketsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/ConsumerID.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/ConsumerID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/java/mk/ukim/finki/NapredniBazi/Proekt/Web/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proekt/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Proekt/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +84,7 @@
       <workItem from="1687185905939" duration="92000" />
       <workItem from="1687624298634" duration="5167000" />
       <workItem from="1687693616124" duration="1269000" />
-      <workItem from="1687699015913" duration="2309000" />
+      <workItem from="1687699015913" duration="7892000" />
     </task>
     <servers />
   </component>
